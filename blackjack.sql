@@ -123,9 +123,32 @@ FOR EACH ROW
 
 DELIMITER ;
 
+-- PRUEBAS DE LOS TRIGGERS
+INSERT INTO Jugador (idJuego, nombre, p_jugadas) VALUES 
+(1, 'Sebastian777', 1); 
 
+SELECT * FROM Juego;
 
+INSERT INTO Partida (diamantes, idJugador, f_partida) VALUES
+(40, 6, '2025-05-21');
 
+SELECT * FROM Jugador;
+
+DELIMITER $$
+CREATE TRIGGER fecha_partida_automatica
+BEFORE INSERT ON Partida
+FOR EACH ROW
+	BEGIN
+		SET NEW.f_partida = CURDATE();
+	END$$
+DELIMITER ;
+
+-- PRUEBA TRIGGER PARTIDA
+
+INSERT INTO Partida (diamantes, idJugador) VALUES
+(35, 7);
+
+SELECT * FROM Partida;
 
 
 
