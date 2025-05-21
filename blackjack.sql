@@ -96,3 +96,44 @@ VALUES
 (23, 6, '2025-05-16'),
 (25, 6, '2025-05-18');
 
+-- TRIGGERS
+DELIMITER $$
+
+CREATE TRIGGER actualizar_n_jugadores
+AFTER INSERT ON Jugador
+FOR EACH ROW
+	BEGIN
+		UPDATE Juego
+        SET	n_jugadores = n_jugadores + 1
+        WHERE id = 1;
+END$$
+
+DELIMITER ;
+
+DELIMITER $$
+
+CREATE TRIGGER actualizar_p_jugadas
+AFTER INSERT ON Partida
+FOR EACH ROW
+	BEGIN
+		UPDATE Jugador
+		SET p_jugadas = p_jugadas + 1
+        WHERE id = NEW.idJugador;
+	END$$
+
+DELIMITER ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
