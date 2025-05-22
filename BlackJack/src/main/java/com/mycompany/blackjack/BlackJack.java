@@ -7,6 +7,8 @@ public class BlackJack {
 
     public static void main(String[] args) throws SQLException {
         
+        DataBaseManager dbm = new DataBaseManager();
+        dbm.mostrarJugador();
         Scanner sc = new Scanner(System.in); 
         DataBaseManager dbm = new DataBaseManager();
         int opcion = 0;

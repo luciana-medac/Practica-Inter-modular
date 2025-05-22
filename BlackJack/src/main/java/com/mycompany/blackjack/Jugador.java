@@ -1,14 +1,15 @@
 package com.mycompany.blackjack;
 
 public class Jugador {
+    private int id;
     private int idJuego;
     private String nombre;
-    private int partidasJugadas;
+    private int p_jugadas;
 
     public Jugador(int i, String n, int p) {
         this.idJuego = i;
         this.nombre = n;
-        this.partidasJugadas = p;
+        this.p_jugadas = p;
     }
 
     public int getIdJuego() {
@@ -28,15 +29,15 @@ public class Jugador {
     }
 
     public int getPartidasJugadas() {
-        return this.partidasJugadas;
+        return this.p_jugadas;
     }
 
     public void setPartidasJugadas(int p) {
-        this.partidasJugadas = p;
+        this.p_jugadas = p;
     }
 
     @Override
     public String toString() {
-        return "Id del juego: " + this.idJuego + ", nombre: " + this.nombre + ", partidas jugadas: " + this.partidasJugadas;
+        return "Id del juego: " + this.idJuego + ", nombre: " + this.nombre + ", partidas jugadas: " + this.p_jugadas;
     } 
 }

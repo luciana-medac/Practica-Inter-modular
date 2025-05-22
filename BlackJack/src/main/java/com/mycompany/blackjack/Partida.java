@@ -3,22 +3,23 @@ package com.mycompany.blackjack;
 import java.util.Date;
 
 public class Partida {
-    private int idJugador;
+    private int id;
+    private int idjugador;
     private int diamantes;
-    private Date fechaPartida;
+    private Date f_partida;
 
     public Partida(int i, int d, Date f) {
-        this.idJugador = i;
+        this.idjugador = i;
         this.diamantes = d;
-        this.fechaPartida = f;
+        this.f_partida = f;
     }
 
     public int getIdJugador() {
-        return this.idJugador;
+        return this.idjugador;
     }
 
     public void setIdJugador(int i) {
-        this.idJugador = i;
+        this.idjugador = i;
     }
 
     public int getDiamantes() {
@@ -30,15 +31,15 @@ public class Partida {
     }
 
     public Date getFechaPartida() {
-        return this.fechaPartida;
+        return this.f_partida;
     }
 
     public void setFechaPartida(Date f) {
-        this.fechaPartida = f;
+        this.f_partida = f;
     }
 
     @Override
     public String toString() {
-        return "Partida: " + "id del jugador: " + this.idJugador + ", diamantes: " + this.diamantes + ", fecha de la partida: " + this.fechaPartida;
+        return "Partida: " + "id del jugador: " + this.idjugador + ", diamantes: " + this.diamantes + ", fecha de la partida: " + this.f_partida;
     }
 }

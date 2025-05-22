@@ -10,23 +10,24 @@ public class DataBaseManager {
     private final Connection conn;
 
     public DataBaseManager() throws SQLException {
-        this.url = "jdbc:mysql://localhost:3306/blackjack";
-        this.user = "root";
-        this.password = "Med@c";
+        this.url = "jdbc:mysql://database-1.ci6wlygelbuz.us-east-1.rds.amazonaws.com/blackjack";
+        this.user = "admin";
+        this.password = "amoaMika8cho";
         this.conn = DriverManager.getConnection(this.url, this.user, this.password);
 
     }
 
     public void mostrarJugador() throws SQLException {
 
-        String sql = "SELECT * FROM jugador";
+        String sql = "SELECT * FROM Jugador";
         PreparedStatement stmt = conn.prepareStatement(sql);
         ResultSet rs = stmt.executeQuery();
         while (rs.next()) {
-            int numJugadores = rs.getInt("numero_de_jugadores");
+            int id = rs.getInt("id");
+            int idJuego = rs.getInt("idJuego");
             String nombre = rs.getString("nombre");
-            String descripcion = rs.getString("descripcion");
-            System.out.println("Nombre: " + nombre + " / numero de jugadores: " + numJugadores +  " / descripcion: " + descripcion);
+            int p_jugadas = rs.getInt("p_jugadas");
+            System.out.println("Nombre: " + nombre + " / partidas jugadas: " + p_jugadas +  " / id: " + id + " / id del juego: " + idJuego);
         }
     }
 
