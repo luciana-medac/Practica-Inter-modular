@@ -8,12 +8,18 @@ public class Partida {
     private int diamantes;
     private Date f_partida;
 
-    public Partida(int i, int d, Date f) {
-        this.idjugador = i;
-        this.diamantes = d;
-        this.f_partida = f;
+    public Partida() {
+        
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
     public int getIdJugador() {
         return this.idjugador;
     }

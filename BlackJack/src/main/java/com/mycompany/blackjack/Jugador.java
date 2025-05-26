@@ -6,12 +6,18 @@ public class Jugador {
     private String nombre;
     private int p_jugadas;
 
-    public Jugador(int i, String n, int p) {
-        this.idJuego = i;
-        this.nombre = n;
-        this.p_jugadas = p;
+    public Jugador() {
+
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
     public int getIdJuego() {
         return this.idJuego;
     }

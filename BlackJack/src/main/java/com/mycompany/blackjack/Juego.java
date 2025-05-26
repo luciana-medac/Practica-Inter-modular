@@ -7,11 +7,8 @@ public class Juego {
     private String nombre;
     private String descripcion;
 
-    public Juego(int i, int nJ, String n, String d) {
-        this.id = i;
-        this.n_jugadores = nJ;
-        this.nombre = n;
-        this.descripcion = d;
+    public Juego() {
+
     }
 
     public int getId() {
@@ -48,6 +45,6 @@ public class Juego {
 
     @Override
     public String toString() {
-        return "Numero de jugadores: " + this.n_jugadores + ", nombre: " + this.nombre + ", descripcion: " + this.descripcion;
+        return "Nombre: " + this.nombre + ", Numero de jugadores: " + this.n_jugadores + ", descripcion: " + this.descripcion;
     }
 }
