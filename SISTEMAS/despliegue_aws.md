@@ -76,7 +76,10 @@ En esta ventana nos dirigiremos a SSH > Autenticación y en el apartado de *Arch
 ![image](https://github.com/user-attachments/assets/518ff6c9-10b2-434e-8a28-cc278db8d005)
 
 
-Una vez conectado, nos dirigimos a la carpeta /home/ubuntu donde guardaremos la carpeta con nuestra página web
+Una vez conectado, nos dirigimos por una parte al sitio donde tenemos la carpeta de la página web en local y por otra parte a la carpeta /home/ubuntu donde guardaremos la carpeta con nuestra página web
+
+![image](https://github.com/user-attachments/assets/117f2f20-0a5b-467f-a65f-a7aa1f3d0455)
+
 
 Volvemos a la terminal, donde copiaremos nuestra carpeta a la carpeta de /var/www/html, ya que si lo hacemos de la forma anterior, no nos dejaría por permisos. Escribimos el siguiente comando:
   - sudo cp -r /home/ubuntu/carpeta_proyecto /var/www/html
