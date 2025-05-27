@@ -75,13 +75,16 @@ Una vez conectado, nos dirigimos a la carpeta /home/ubuntu donde guardaremos la 
 Volvemos a la terminal, donde copiaremos nuestra carpeta a la carpeta de /var/www/html, ya que si lo hacemos de la forma anterior, no nos dejaría por permisos. Escribimos el siguiente comando:
   - sudo cp -r /home/ubuntu/carpeta_proyecto /var/www/html
 
-[Falta una caprtura]
+![image](https://github.com/user-attachments/assets/93691f2d-91b2-4505-8e30-b5c5f97d1b60)
+![image](https://github.com/user-attachments/assets/b90ae76c-cd0c-493e-832a-548727bef3e9)
+
 
 ## PÁGINA WEB DESDE EL NAVEGADOR
 
-Si introducimos en el navegador la dirección IP y establecemos la ruta de la carpeta, nos aparecería correctamente la página web:
+Si introducimos en el navegador la dirección IPv4 pública de la instancia y establecemos la ruta de la carpeta, nos aparecería correctamente la página web:
 
-[Falta la captura de la página web]
+![image](https://github.com/user-attachments/assets/b5eb4ffa-3ca5-49b2-932c-1be500dcf9e8)
+
 
 
 
