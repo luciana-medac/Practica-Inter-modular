@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack Minecraft - Proyecto final</title>
+    <link href="https://fonts.googleapis.com/css2?family=Minecraft&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Proyecto: Blackjack Minecraft</h1>
+        <h2>Grupo: Creeper Coders</h2>
+    </header>
+
+    <section id="introduccion">
+        <h3>Introduccion</h3>
+        <p>
+            Este sitio web fue creado para desarrollar proyecto final del Grado Superior: Desarrollo de Aplicaciones Multiplataforma. 
+            El objetivo es demostrar el despliegue de la pagina web en la nube utilizando AWS, ademas del despliegue de una base de Datos
+            en ese mismo sitio. Con esto ultimo pondriamos en funcionamiento un programa de Java basado en mostrar la informacion de la 
+            base de datos.
+            
+            Todo el trabajo se ha realizado en grupo, reflejandose en GitHub.
+        </p>
+    </section>
+
+    <div class="cajita">
+        <section id="normas">
+            <h3>Normas del Blackjack</h3>
+            <ol>
+                <li>El objetivo es conseguir una mano con un valor lo mas cercano posible a 21, sin pasarse.</li>
+                <li>Las cartas numericas valen su valor nominal, las figuras valen 10 y el As puede valer 1 u 11.</li>
+                <li>Se reparten dos cartas al jugador y al crupier.</li>
+                <li>El jugador puede pedir cartas ("hit") o plantarse ("stand").</li>
+                <li>Si la mano supera 21 puntos, el jugador pierde automaticamente ("bust").</li>
+                <li>Despues de que el jugador termina, el crupier juega siguiendo reglas fijas (normalmente se planta
+                    con 17
+                    o mas).</li>
+                <li>Gana quien tenga la mano mas cercana a 21 sin pasarse.</li>
+            </ol>
+        </section>
+    </div>
+
+    <div class="cajita">
+        <section id="tablas">
+            <h3>Datos Simulados</h3>
+
+            <article>
+                <h4>Estadisticas de Jugadores</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nº jugadores</th>
+                            <th>Descripcion</th>
+                            <th>nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>juego de cartas clasico donde se intenta llegar a 21 sin pasarse</td>
+                            <td>blackjack</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h4>Estadisticas de Jugadores</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Partidas Jugadas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6</td>
+                            <td>Francis63</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos77</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Alice11</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h4>Estadisticas de Partidas</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Diamantes</th>
+                            <th>idJugador</th>
+                            <th>Fecha de partida</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>2025-05-01</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>2025-05-02</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>3</td>
+                            <td>2025-05-12</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>4</td>
+                            <td>2025-05-09</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>5</td>
+                            <td>2025-05-06</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>6</td>
+                            <td>2025-05-12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+        </section>
+    </div>
+
+    <div class="cajita">
+        <section id="estilo">
+            <h3>Interaccion con el Estilo</h3>
+
+            <div class="contenedor-estilo">
+                <div class="lado-izquierdo">
+                    <p>Haz clic en el boton para alternar entre modo claro y modo oscuro:</p>
+                    <button onclick="cambiarTema()">Cambiar Tema</button>
+                </div>
+
+                <div class="lado-derecho">
+                    <p>Accede a la pagina oficial:</p>
+                    <a href="https://www.minecraft.net/es-es" target="_blank">
+                        <img src="/img/Minecraft.jpg" alt="Minecraft"
+                            style="width: 200px; height: auto; margin-left: 10px; cursor: pointer; border-radius: 5px;">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2025 TRABAJO INTERMODULAR</p>
+        <p>Andy | Adrian | Luciana</p>
+    </footer>
+
+    <script src="/script/script.js"></script>
+</body>
+
+</html>
