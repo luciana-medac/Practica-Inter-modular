@@ -70,6 +70,12 @@ Descargamos la aplicacion de WinSCP. Y una vez iniciada la aplicación:
 
 ![image](https://github.com/user-attachments/assets/f820954c-e3df-4e9a-8940-112bbcf4ab3f)
 
+Haremos clic en la opción de Avanzado... 
+En esta ventana nos dirigiremos a SSH > Autenticación y en el apartado de *Archivo de clave privada* pondremos la ruta de la carpeta donde tenemos nuestro archivo .ppk que descargamos anteriormente
+
+![image](https://github.com/user-attachments/assets/518ff6c9-10b2-434e-8a28-cc278db8d005)
+
+
 Una vez conectado, nos dirigimos a la carpeta /home/ubuntu donde guardaremos la carpeta con nuestra página web
 
 Volvemos a la terminal, donde copiaremos nuestra carpeta a la carpeta de /var/www/html, ya que si lo hacemos de la forma anterior, no nos dejaría por permisos. Escribimos el siguiente comando:
