@@ -44,6 +44,12 @@ public class Partida {
         this.f_partida = f;
     }
 
+    public void mostrarInfo(){
+        System.out.println("Id del jugador: " + this.idjugador);
+        System.out.println("Diamantes: " + this.diamantes);
+        System.out.println("Fecha de la partida: " + this.f_partida);
+    }
+    
     @Override
     public String toString() {
         return "Partida: " + "id del jugador: " + this.idjugador + ", diamantes: " + this.diamantes + ", fecha de la partida: " + this.f_partida;

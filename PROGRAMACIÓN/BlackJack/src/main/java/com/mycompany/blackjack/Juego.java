@@ -1,5 +1,7 @@
 package com.mycompany.blackjack;
 
+import java.util.List;
+
 public class Juego {
 
     private int id;
@@ -41,6 +43,13 @@ public class Juego {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+    
+    public void mostrarInfo() {
+        System.out.println("Juego: " + this.nombre);
+        System.out.println("Id: " + this.id);
+        System.out.println("Descripcion: " + this.descripcion);
+        System.out.println("Numero de jugadores: " + this.n_jugadores);
     }
 
     @Override
