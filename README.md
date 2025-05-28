@@ -4,6 +4,11 @@ Intregantes del grupo: *Luciana Molina, Andrea Orpez, Adrián Garrido*
 
 Este proyecto está organizado en 5 apartados, de 5 diferentes asignaturas que interconectan entre sí.
 
+Presentación del proyecto: 
+
+[trabajo intermodular.pdf](https://github.com/user-attachments/files/20481254/trabajo.intermodular.pdf)
+
+
 ## :floppy_disk: BASE DE DATOS
 
 Contenido: 
