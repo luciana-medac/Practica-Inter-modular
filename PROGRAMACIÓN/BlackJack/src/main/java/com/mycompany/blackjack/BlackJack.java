@@ -59,6 +59,7 @@ public class BlackJack {
                         break;
                     case 4:
                         System.out.println("Cerrando el programa...");
+                        dbm.cerarConexion();
                         break;
                     default:
                         System.out.println("No existe esa opción.");

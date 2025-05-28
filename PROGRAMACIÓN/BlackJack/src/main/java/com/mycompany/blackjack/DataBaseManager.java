@@ -97,4 +97,8 @@ public class DataBaseManager {
         }
 
     }
+    
+    public void cerarConexion(){
+        this.conn.close();
+    }
 }
