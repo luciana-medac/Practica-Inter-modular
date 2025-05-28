@@ -1,3 +1,3 @@
 ## DIAGRAMA E/R
 
-![image](https://github.com/user-attachments/assets/1a979944-7f49-4d30-95eb-52b8674adab7)
+![image](https://github.com/user-attachments/assets/ebd322f5-bd5c-4f66-8dfd-df7abe61ae26)
