@@ -6,7 +6,7 @@ Este proyecto está organizado en 5 apartados, de 5 diferentes asignaturas que i
 
 Presentación del proyecto: 
 
-[trabajo intermodular.pdf](https://github.com/user-attachments/files/20481254/trabajo.intermodular.pdf)
+[trabajo intermodular (1).pdf](https://github.com/user-attachments/files/20482055/trabajo.intermodular.1.pdf)
 
 
 ## :floppy_disk: BASE DE DATOS
